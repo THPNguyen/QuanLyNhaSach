@@ -7,7 +7,7 @@ namespace DAL_QLNS
 {
     public class DBConnect
     {
-        protected SqlConnection _con = new SqlConnection("Data Source=DESKTOP-TPK8MAB\\MSSQL_EXP_2008R2;Initial Catalog=QuanLyNhaSach;Integrated Security=True");
+        protected SqlConnection _con = new SqlConnection("Data Source=.;Initial Catalog=QuanLyNhaSach;Integrated Security=True");
         
         protected void openDB()
         {

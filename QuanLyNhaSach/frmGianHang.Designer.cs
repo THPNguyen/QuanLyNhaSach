@@ -1,6 +1,6 @@
 ﻿namespace QuanLyNhaSach
 {
-    partial class frmGiangHang
+    partial class frmGianHang
     {
         /// <summary>
         /// Required designer variable.

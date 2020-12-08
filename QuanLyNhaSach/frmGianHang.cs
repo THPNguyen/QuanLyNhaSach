@@ -11,10 +11,10 @@ using BUS_QLNS;
 using ET_QLNS;
 namespace QuanLyNhaSach
 {
-    public partial class frmGiangHang : Form
+    public partial class frmGianHang : Form
     {
         BUS_GiangHang bus_GH = new BUS_GiangHang();
-        public frmGiangHang()
+        public frmGianHang()
         {
             InitializeComponent();
         }

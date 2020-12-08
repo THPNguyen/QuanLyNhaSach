@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_GiangHang.cs" />
+    <Compile Include="BUS_NhaCungCap.cs" />
     <Compile Include="BUS_NhanVien.cs" />
     <Compile Include="BUS_Sach.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

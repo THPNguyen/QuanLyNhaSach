@@ -139,11 +139,11 @@ namespace QuanLyNhaSach
 
         private void frmSach_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult r = MessageBox.Show("Bạn muốn đống chương trình này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(r == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
+            //DialogResult r = MessageBox.Show("Bạn muốn đống chương trình này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //if(r == DialogResult.No)
+            //{
+            //    e.Cancel = true;
+            //}
         }
     }
 }
