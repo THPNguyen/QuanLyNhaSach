@@ -10,19 +10,29 @@ namespace BUS_QLNS
     public class BUS_NhaCungCap
     {
         DAL_NhaCungCap dal_NCC = new DAL_NhaCungCap();
+        //---------------------------------------------------------------------------
+        //Lay Du Lieu
         public DataTable getNCC()
         {
             return dal_NCC.getNCC();
         }
+        //---------------------------------------------------------------------------
+        //Them, Xoa, Sua
         public bool themNCC(ET_NhaCungCap et_NCC)
         {
             return dal_NCC.themNCC(et_NCC);
         }
+
         public bool suaNCC(ET_NhaCungCap et_NCC)
         {
             return dal_NCC.suaNCC(et_NCC);
         }
+<<<<<<< HEAD
+        public bool xoaNCC(string strMaNCC)
+=======
+
         public bool xoaGH(string strMaNCC)
+>>>>>>> 074cdda7de2dcc173300a7271dfcdb0962fdb072
         {
             return dal_NCC.xoaNCC(strMaNCC);
         }

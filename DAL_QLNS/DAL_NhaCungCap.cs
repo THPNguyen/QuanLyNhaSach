@@ -44,14 +44,14 @@ namespace DAL_QLNS
         }
         //----------------------------------------------------------------
         //THEM, XOA, SUA
-        public bool themNCC(ET_NhaCungCap et_GH)
+        public bool themNCC(ET_NhaCungCap et_NCC)
         {
             try
             {
                 openDB();
                 SqlCommand cmd = HandleCMD.proc("sp_ThemNhaCungCap", _con);
 
-                addParameter(cmd, et_GH, strNameParametor);
+                addParameter(cmd, et_NCC, strNameParametor);
 
                 if (this.cmdExecuted(cmd))
                 {
