@@ -63,5 +63,12 @@ H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmMain.resources
 H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmNhaCungCap.resources
 H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmTheLoai.resources
 H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\GUI_QLNS.csproj.CopyComplete
-H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmLogin.resources
 H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmKhachHang.resources
+H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmBookStore.resources
+H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmLogin01.resources
+H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmCoffee.resources
+H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmEmployee.resources
+H:\Github\QuanLyNhaSach\QuanLyNhaSach\bin\Debug\Guna.UI2.dll
+H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmThongTinSach.resources
+H:\Github\QuanLyNhaSach\QuanLyNhaSach\bin\Debug\Guna.UI.dll
+H:\Github\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmBookStore001.resources

@@ -15,7 +15,7 @@ namespace DAL_QLNS
             {
                 _con.Open();
             }
-        }
+        } //open database.
         protected bool cmdExecuted(SqlCommand cmd)
         {
             if (cmd.ExecuteNonQuery() > 0)
@@ -23,13 +23,13 @@ namespace DAL_QLNS
                 return true;
             }
             return false;
-        }
+        }//checkExecuted thuc hien duoc hay khong.
         protected void closeDB()
         {
             if (_con.State == ConnectionState.Open)
             {
                 _con.Close();
             }
-        }
+        }// disconnecting database.
     }
 }

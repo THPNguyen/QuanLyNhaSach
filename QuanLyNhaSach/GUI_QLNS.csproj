@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>QuanLyNhaSach</RootNamespace>
     <AssemblyName>QuanLyNhaSach</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -23,6 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +33,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\Asset\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -42,6 +52,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBookStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookStore.designer.cs">
+      <DependentUpon>frmBookStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookStore001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookStore001.Designer.cs">
+      <DependentUpon>frmBookStore001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoffee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoffee.Designer.cs">
+      <DependentUpon>frmCoffee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGianHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,11 +91,11 @@
     <Compile Include="frmLoad.Designer.cs">
       <DependentUpon>frmLoad.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="frmLogin01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="frmLogin01.Designer.cs">
+      <DependentUpon>frmLogin01.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -96,16 +130,40 @@
     <Compile Include="frmTheLoai.Designer.cs">
       <DependentUpon>frmTheLoai.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThongTinSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongTinSach.Designer.cs">
+      <DependentUpon>frmThongTinSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBookStore.resx">
+      <DependentUpon>frmBookStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookStore001.resx">
+      <DependentUpon>frmBookStore001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCoffee.resx">
+      <DependentUpon>frmCoffee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGianHang.resx">
       <DependentUpon>frmGianHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoad.resx">
       <DependentUpon>frmLoad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="frmLogin01.resx">
+      <DependentUpon>frmLogin01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -125,6 +183,9 @@
     <EmbeddedResource Include="frmTheLoai.resx">
       <DependentUpon>frmTheLoai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmThongTinSach.resx">
+      <DependentUpon>frmThongTinSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -135,6 +196,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

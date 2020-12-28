@@ -6,7 +6,6 @@ H:\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.dll
 H:\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.pdb
 H:\Github\QuanLyNhaSach\ET_QLNS\bin\Debug\ET_QLNS.dll
 H:\Github\QuanLyNhaSach\ET_QLNS\bin\Debug\ET_QLNS.pdb
-H:\Github\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.csprojAssemblyReference.cache
 H:\Github\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.csproj.CoreCompileInputs.cache
 H:\Github\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.dll
 H:\Github\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.pdb
@@ -16,3 +15,4 @@ F:\UngDungC#\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.csprojAssemblyReference.cac
 F:\UngDungC#\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.csproj.CoreCompileInputs.cache
 F:\UngDungC#\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.dll
 F:\UngDungC#\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.pdb
+H:\Github\QuanLyNhaSach\ET_QLNS\obj\Debug\ET_QLNS.csprojAssemblyReference.cache

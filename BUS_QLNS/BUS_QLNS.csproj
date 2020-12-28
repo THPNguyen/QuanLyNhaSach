@@ -42,6 +42,7 @@
     <Compile Include="BUS_NhaCungCap.cs" />
     <Compile Include="BUS_NhanVien.cs" />
     <Compile Include="BUS_Sach.cs" />
+    <Compile Include="BUS_TheLoai.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
