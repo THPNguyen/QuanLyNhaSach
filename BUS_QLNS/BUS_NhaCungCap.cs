@@ -27,12 +27,8 @@ namespace BUS_QLNS
         {
             return dal_NCC.suaNCC(et_NCC);
         }
-<<<<<<< HEAD
-        public bool xoaNCC(string strMaNCC)
-=======
 
-        public bool xoaGH(string strMaNCC)
->>>>>>> 074cdda7de2dcc173300a7271dfcdb0962fdb072
+        public bool xoaNCC(string strMaNCC)
         {
             return dal_NCC.xoaNCC(strMaNCC);
         }

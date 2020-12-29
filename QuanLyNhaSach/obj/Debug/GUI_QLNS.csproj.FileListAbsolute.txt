@@ -49,3 +49,12 @@ F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmLoad.resourc
 F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmNhaCungCap.resources
 F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmTheLoai.resources
 F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmGianHang.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmChiTietHoaDon.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmHoaDon.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmFuncBanSach.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.frmFuncNhapSach.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.controlNhaCungCap.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.controlTheLoai.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.controlChiTietHoaDon.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.controlHoaDon.resources
+F:\UngDungC#\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.ControlBanSach.resources

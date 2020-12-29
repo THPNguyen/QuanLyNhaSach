@@ -36,10 +36,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ET_ChiTietHoaDon.cs" />
     <Compile Include="ET_GianHang.cs" />
+    <Compile Include="ET_HoaDon.cs" />
     <Compile Include="ET_NhaCungCap.cs" />
     <Compile Include="ET_NhanVien.cs" />
     <Compile Include="ET_Sach.cs" />
+    <Compile Include="ET_TheLoai.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

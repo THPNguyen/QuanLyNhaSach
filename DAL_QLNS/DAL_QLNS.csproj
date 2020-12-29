@@ -36,10 +36,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_ChiTietHoaDon.cs" />
     <Compile Include="DAL_GiangHang.cs" />
+    <Compile Include="DAL_HoaDon.cs" />
     <Compile Include="DAL_NhaCungCap.cs" />
     <Compile Include="DAL_NhanVien.cs" />
     <Compile Include="DAL_Sach.cs" />
+    <Compile Include="DAL_TheLoai.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="HandleCMD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

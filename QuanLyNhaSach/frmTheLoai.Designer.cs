@@ -66,7 +66,7 @@ namespace QuanLyNhaSach
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 93);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(662, 36);
+            this.panel3.Size = new System.Drawing.Size(658, 85);
             this.panel3.TabIndex = 5;
             // 
             // btnTimKiem
@@ -134,9 +134,9 @@ namespace QuanLyNhaSach
             // 
             this.panel2.Controls.Add(this.dgvGiangHang);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 129);
+            this.panel2.Location = new System.Drawing.Point(0, 178);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(662, 227);
+            this.panel2.Size = new System.Drawing.Size(658, 227);
             this.panel2.TabIndex = 4;
             // 
             // dgvGiangHang
@@ -147,7 +147,7 @@ namespace QuanLyNhaSach
             this.dgvGiangHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvGiangHang.Location = new System.Drawing.Point(0, 0);
             this.dgvGiangHang.Name = "dgvGiangHang";
-            this.dgvGiangHang.Size = new System.Drawing.Size(662, 227);
+            this.dgvGiangHang.Size = new System.Drawing.Size(658, 227);
             this.dgvGiangHang.TabIndex = 0;
             // 
             // panel1
@@ -156,7 +156,7 @@ namespace QuanLyNhaSach
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(662, 93);
+            this.panel1.Size = new System.Drawing.Size(658, 93);
             this.panel1.TabIndex = 3;
             // 
             // groupBox1
@@ -170,7 +170,7 @@ namespace QuanLyNhaSach
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(662, 93);
+            this.groupBox1.Size = new System.Drawing.Size(658, 93);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Giang Hàng";
@@ -227,7 +227,7 @@ namespace QuanLyNhaSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 356);
+            this.ClientSize = new System.Drawing.Size(658, 405);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

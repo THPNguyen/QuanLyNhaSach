@@ -12,6 +12,32 @@ namespace DAL_QLNS
     {
         //string maSach, string maGH, string tenSach, string theloai, string tenNCC, string tacgia, string maNV, float giaban, DateTime nxb, DateTime ngaynhap, int soluong, int giamgia
         private String[] strNameParameter = { "@MASACH", "@MAGH", "@TENSACH", "@THELOAI", "@TENNXB", "@TACGIA", "@MANV", "@GIAMGIA", "@NXB", "@NGAYNHAP", "@SOLUONG", "@GIABAN" };
+
+        public int getPrice(String maSach) {
+            try
+            {
+                this.openDB();
+                SqlCommand cmd = new SqlCommand("getGiaSach", _con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@MaSach", maSach);
+                Int32 price = Convert.ToInt32(cmd.ExecuteScalar());
+                
+                    Console.WriteLine("DA: " + price);
+                
+                return price;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("ERROR: " + ex.Message);
+                return 0;
+            }
+            finally
+            {
+                this.closeDB();
+            }
+        }
+
+
         public DataTable getSach()
         {
             DataTable dt = new DataTable();
@@ -61,7 +87,7 @@ namespace DAL_QLNS
                 this.openDB();
                 SqlCommand cmd = HandleCMD.proc("sp_ThemSach", _con);
                 addParameter(cmd, sach, strNameParameter);
-                if (cmd.ExecuteNonQuery() > 0)
+                if (cmd.ExecuteNonQuery() > 0) 
                     return true;
             }
             catch (Exception ex)

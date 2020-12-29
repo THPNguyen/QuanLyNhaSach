@@ -33,32 +33,30 @@ namespace QuanLyNhaSach
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.issue1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.issue2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.function1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imsSach = new System.Windows.Forms.ToolStripMenuItem();
+            this.imsNhaCungCap = new System.Windows.Forms.ToolStripMenuItem();
+            this.imsTheLoai = new System.Windows.Forms.ToolStripMenuItem();
+            this.imsHoaDon = new System.Windows.Forms.ToolStripMenuItem();
+            this.imsKhachHang = new System.Windows.Forms.ToolStripMenuItem();
+            this.imsNhanVien = new System.Windows.Forms.ToolStripMenuItem();
+            this.gianHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnExitApp = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnChiTietHD_Submenu = new System.Windows.Forms.Button();
+            this.btnHoaDon_Submenu = new System.Windows.Forms.Button();
+            this.btnTheLoai_SubMenu = new System.Windows.Forms.Button();
             this.btnNCC_Submenu = new System.Windows.Forms.Button();
-            this.pnlDropMenu1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.btnSach_SubMenu = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnTheLoai_SubMenu = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.pnlDropMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSubMenu1
@@ -89,7 +87,7 @@ namespace QuanLyNhaSach
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1234, 711);
+            this.panel1.Size = new System.Drawing.Size(1000, 711);
             this.panel1.TabIndex = 0;
             // 
             // pnlContainer
@@ -97,48 +95,89 @@ namespace QuanLyNhaSach
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContainer.Location = new System.Drawing.Point(240, 76);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(994, 635);
+            this.pnlContainer.Size = new System.Drawing.Size(760, 635);
             this.pnlContainer.TabIndex = 4;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dashboardToolStripMenuItem,
-            this.issue1ToolStripMenuItem,
-            this.issue2ToolStripMenuItem,
-            this.function1ToolStripMenuItem});
+            this.imsSach,
+            this.imsNhaCungCap,
+            this.imsTheLoai,
+            this.imsHoaDon,
+            this.imsKhachHang,
+            this.imsNhanVien,
+            this.gianHàngToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(240, 52);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(15, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(994, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(760, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // dashboardToolStripMenuItem
+            // imsSach
             // 
-            this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.dashboardToolStripMenuItem.Text = "Dashboard";
+            this.imsSach.AutoSize = false;
+            this.imsSach.ForeColor = System.Drawing.Color.White;
+            this.imsSach.Name = "imsSach";
+            this.imsSach.Size = new System.Drawing.Size(100, 20);
+            this.imsSach.Text = "Sách";
+            this.imsSach.Click += new System.EventHandler(this.imsSach_Click);
             // 
-            // issue1ToolStripMenuItem
+            // imsNhaCungCap
             // 
-            this.issue1ToolStripMenuItem.Name = "issue1ToolStripMenuItem";
-            this.issue1ToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.issue1ToolStripMenuItem.Text = "Issue1";
+            this.imsNhaCungCap.AutoSize = false;
+            this.imsNhaCungCap.ForeColor = System.Drawing.Color.White;
+            this.imsNhaCungCap.Name = "imsNhaCungCap";
+            this.imsNhaCungCap.Size = new System.Drawing.Size(122, 20);
+            this.imsNhaCungCap.Text = "Nhà Cung Cấp";
+            this.imsNhaCungCap.Click += new System.EventHandler(this.imsNhaCungCap_Click);
             // 
-            // issue2ToolStripMenuItem
+            // imsTheLoai
             // 
-            this.issue2ToolStripMenuItem.Name = "issue2ToolStripMenuItem";
-            this.issue2ToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.issue2ToolStripMenuItem.Text = "Issue2";
+            this.imsTheLoai.AutoSize = false;
+            this.imsTheLoai.ForeColor = System.Drawing.Color.White;
+            this.imsTheLoai.Name = "imsTheLoai";
+            this.imsTheLoai.Size = new System.Drawing.Size(122, 20);
+            this.imsTheLoai.Text = "Thể Loại";
+            this.imsTheLoai.Click += new System.EventHandler(this.imsTheLoai_Click);
             // 
-            // function1ToolStripMenuItem
+            // imsHoaDon
             // 
-            this.function1ToolStripMenuItem.Name = "function1ToolStripMenuItem";
-            this.function1ToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
-            this.function1ToolStripMenuItem.Text = "Function1";
+            this.imsHoaDon.AutoSize = false;
+            this.imsHoaDon.ForeColor = System.Drawing.Color.White;
+            this.imsHoaDon.Name = "imsHoaDon";
+            this.imsHoaDon.Size = new System.Drawing.Size(100, 20);
+            this.imsHoaDon.Text = "Hóa Đơn";
+            this.imsHoaDon.Click += new System.EventHandler(this.imsHoaDon_Click);
+            // 
+            // imsKhachHang
+            // 
+            this.imsKhachHang.AutoSize = false;
+            this.imsKhachHang.ForeColor = System.Drawing.Color.White;
+            this.imsKhachHang.Name = "imsKhachHang";
+            this.imsKhachHang.Size = new System.Drawing.Size(100, 20);
+            this.imsKhachHang.Text = "Khách Hàng";
+            this.imsKhachHang.Click += new System.EventHandler(this.imsKhachHang_Click);
+            // 
+            // imsNhanVien
+            // 
+            this.imsNhanVien.AutoSize = false;
+            this.imsNhanVien.ForeColor = System.Drawing.Color.White;
+            this.imsNhanVien.Name = "imsNhanVien";
+            this.imsNhanVien.Size = new System.Drawing.Size(100, 20);
+            this.imsNhanVien.Text = "Nhân Viên";
+            this.imsNhanVien.Click += new System.EventHandler(this.imsNhanVien_Click);
+            // 
+            // gianHàngToolStripMenuItem
+            // 
+            this.gianHàngToolStripMenuItem.AutoSize = false;
+            this.gianHàngToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.gianHàngToolStripMenuItem.Name = "gianHàngToolStripMenuItem";
+            this.gianHàngToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+            this.gianHàngToolStripMenuItem.Text = "Gian Hàng";
             // 
             // panel3
             // 
@@ -148,7 +187,7 @@ namespace QuanLyNhaSach
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(240, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(994, 52);
+            this.panel3.Size = new System.Drawing.Size(760, 52);
             this.panel3.TabIndex = 1;
             // 
             // label1
@@ -169,7 +208,7 @@ namespace QuanLyNhaSach
             this.panel4.Controls.Add(this.btnExitApp);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(867, 0);
+            this.panel4.Location = new System.Drawing.Point(633, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(127, 52);
             this.panel4.TabIndex = 0;
@@ -193,7 +232,7 @@ namespace QuanLyNhaSach
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::QuanLyNhaSach.Properties.Resources.minus;
-            this.button1.Location = new System.Drawing.Point(37, 3);
+            this.button1.Location = new System.Drawing.Point(28, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(36, 36);
             this.button1.TabIndex = 0;
@@ -203,11 +242,10 @@ namespace QuanLyNhaSach
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.btnChiTietHD_Submenu);
+            this.panel2.Controls.Add(this.btnHoaDon_Submenu);
             this.panel2.Controls.Add(this.btnTheLoai_SubMenu);
             this.panel2.Controls.Add(this.btnNCC_Submenu);
-            this.panel2.Controls.Add(this.pnlDropMenu1);
             this.panel2.Controls.Add(this.btnSach_SubMenu);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -216,6 +254,54 @@ namespace QuanLyNhaSach
             this.panel2.Size = new System.Drawing.Size(240, 711);
             this.panel2.TabIndex = 0;
             // 
+            // btnChiTietHD_Submenu
+            // 
+            this.btnChiTietHD_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnChiTietHD_Submenu.FlatAppearance.BorderSize = 0;
+            this.btnChiTietHD_Submenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChiTietHD_Submenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChiTietHD_Submenu.ForeColor = System.Drawing.Color.White;
+            this.btnChiTietHD_Submenu.Location = new System.Drawing.Point(0, 337);
+            this.btnChiTietHD_Submenu.Name = "btnChiTietHD_Submenu";
+            this.btnChiTietHD_Submenu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnChiTietHD_Submenu.Size = new System.Drawing.Size(238, 45);
+            this.btnChiTietHD_Submenu.TabIndex = 6;
+            this.btnChiTietHD_Submenu.Text = "Lịch sử";
+            this.btnChiTietHD_Submenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChiTietHD_Submenu.UseVisualStyleBackColor = true;
+            // 
+            // btnHoaDon_Submenu
+            // 
+            this.btnHoaDon_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHoaDon_Submenu.FlatAppearance.BorderSize = 0;
+            this.btnHoaDon_Submenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoaDon_Submenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoaDon_Submenu.ForeColor = System.Drawing.Color.White;
+            this.btnHoaDon_Submenu.Location = new System.Drawing.Point(0, 292);
+            this.btnHoaDon_Submenu.Name = "btnHoaDon_Submenu";
+            this.btnHoaDon_Submenu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnHoaDon_Submenu.Size = new System.Drawing.Size(238, 45);
+            this.btnHoaDon_Submenu.TabIndex = 5;
+            this.btnHoaDon_Submenu.Text = "Thống Kê";
+            this.btnHoaDon_Submenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoaDon_Submenu.UseVisualStyleBackColor = true;
+            // 
+            // btnTheLoai_SubMenu
+            // 
+            this.btnTheLoai_SubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTheLoai_SubMenu.FlatAppearance.BorderSize = 0;
+            this.btnTheLoai_SubMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTheLoai_SubMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTheLoai_SubMenu.ForeColor = System.Drawing.Color.White;
+            this.btnTheLoai_SubMenu.Location = new System.Drawing.Point(0, 247);
+            this.btnTheLoai_SubMenu.Name = "btnTheLoai_SubMenu";
+            this.btnTheLoai_SubMenu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnTheLoai_SubMenu.Size = new System.Drawing.Size(238, 45);
+            this.btnTheLoai_SubMenu.TabIndex = 4;
+            this.btnTheLoai_SubMenu.Text = "Kho";
+            this.btnTheLoai_SubMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTheLoai_SubMenu.UseVisualStyleBackColor = true;
+            // 
             // btnNCC_Submenu
             // 
             this.btnNCC_Submenu.Dock = System.Windows.Forms.DockStyle.Top;
@@ -223,75 +309,14 @@ namespace QuanLyNhaSach
             this.btnNCC_Submenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNCC_Submenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNCC_Submenu.ForeColor = System.Drawing.Color.White;
-            this.btnNCC_Submenu.Location = new System.Drawing.Point(0, 315);
+            this.btnNCC_Submenu.Location = new System.Drawing.Point(0, 202);
             this.btnNCC_Submenu.Name = "btnNCC_Submenu";
             this.btnNCC_Submenu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnNCC_Submenu.Size = new System.Drawing.Size(238, 45);
             this.btnNCC_Submenu.TabIndex = 3;
-            this.btnNCC_Submenu.Text = "Nhà Cung Cấp";
+            this.btnNCC_Submenu.Text = "Nhập Sách";
             this.btnNCC_Submenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNCC_Submenu.UseVisualStyleBackColor = true;
-            this.btnNCC_Submenu.Click += new System.EventHandler(this.btnNCC_Submenu_Click);
-            // 
-            // pnlDropMenu1
-            // 
-            this.pnlDropMenu1.BackColor = System.Drawing.Color.Gray;
-            this.pnlDropMenu1.Controls.Add(this.button6);
-            this.pnlDropMenu1.Controls.Add(this.button4);
-            this.pnlDropMenu1.Controls.Add(this.button5);
-            this.pnlDropMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDropMenu1.Location = new System.Drawing.Point(0, 202);
-            this.pnlDropMenu1.Name = "pnlDropMenu1";
-            this.pnlDropMenu1.Size = new System.Drawing.Size(238, 113);
-            this.pnlDropMenu1.TabIndex = 2;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(0, 70);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(238, 35);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Sửa";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 35);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(238, 35);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Xóa";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(238, 35);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Thêm";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // btnSach_SubMenu
             // 
@@ -300,17 +325,16 @@ namespace QuanLyNhaSach
             this.btnSach_SubMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSach_SubMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSach_SubMenu.ForeColor = System.Drawing.Color.White;
-            this.btnSach_SubMenu.Image = global::QuanLyNhaSach.Properties.Resources.down_arrow;
             this.btnSach_SubMenu.Location = new System.Drawing.Point(0, 157);
             this.btnSach_SubMenu.Name = "btnSach_SubMenu";
             this.btnSach_SubMenu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnSach_SubMenu.Size = new System.Drawing.Size(238, 45);
             this.btnSach_SubMenu.TabIndex = 1;
-            this.btnSach_SubMenu.Text = "Sách";
+            this.btnSach_SubMenu.Text = "Home";
             this.btnSach_SubMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSach_SubMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSach_SubMenu.UseVisualStyleBackColor = true;
-            this.btnSach_SubMenu.Click += new System.EventHandler(this.btnSach_SubMenu_Click_1);
+            this.btnSach_SubMenu.Click += new System.EventHandler(this.btnSach_SubMenu_Click);
             // 
             // panel5
             // 
@@ -322,59 +346,11 @@ namespace QuanLyNhaSach
             this.panel5.Size = new System.Drawing.Size(238, 157);
             this.panel5.TabIndex = 0;
             // 
-            // btnTheLoai_SubMenu
-            // 
-            this.btnTheLoai_SubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTheLoai_SubMenu.FlatAppearance.BorderSize = 0;
-            this.btnTheLoai_SubMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTheLoai_SubMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTheLoai_SubMenu.ForeColor = System.Drawing.Color.White;
-            this.btnTheLoai_SubMenu.Location = new System.Drawing.Point(0, 360);
-            this.btnTheLoai_SubMenu.Name = "btnTheLoai_SubMenu";
-            this.btnTheLoai_SubMenu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnTheLoai_SubMenu.Size = new System.Drawing.Size(238, 45);
-            this.btnTheLoai_SubMenu.TabIndex = 4;
-            this.btnTheLoai_SubMenu.Text = "Thể Loại";
-            this.btnTheLoai_SubMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTheLoai_SubMenu.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(0, 405);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(238, 45);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "Function1";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(0, 450);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(238, 45);
-            this.button8.TabIndex = 6;
-            this.button8.Text = "Function1";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1234, 711);
+            this.ClientSize = new System.Drawing.Size(1000, 711);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
             this.Name = "frmMain";
@@ -388,7 +364,6 @@ namespace QuanLyNhaSach
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.pnlDropMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -402,22 +377,21 @@ namespace QuanLyNhaSach
         private System.Windows.Forms.Button btnExitApp;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel pnlDropMenu1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnSach_SubMenu;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnNCC_Submenu;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem dashboardToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem issue1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem issue2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem function1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem imsSach;
+        private System.Windows.Forms.ToolStripMenuItem imsNhaCungCap;
+        private System.Windows.Forms.ToolStripMenuItem imsTheLoai;
+        private System.Windows.Forms.ToolStripMenuItem imsHoaDon;
         private System.Windows.Forms.Button btnSubMenu1;
         private System.Windows.Forms.Panel pnlContainer;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnChiTietHD_Submenu;
+        private System.Windows.Forms.Button btnHoaDon_Submenu;
         private System.Windows.Forms.Button btnTheLoai_SubMenu;
+        private System.Windows.Forms.ToolStripMenuItem imsKhachHang;
+        private System.Windows.Forms.ToolStripMenuItem imsNhanVien;
+        private System.Windows.Forms.ToolStripMenuItem gianHàngToolStripMenuItem;
     }
 }

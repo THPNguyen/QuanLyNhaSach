@@ -10,6 +10,12 @@ namespace BUS_QLNS
     public class BUS_Sach
     {
         DAL_Sach dal_Sach = new DAL_Sach();
+
+        public int getGiaSach(String maSach) {
+
+            return dal_Sach.getPrice(maSach);
+        }
+
         public DataTable getSach()
         {
             return dal_Sach.getSach();

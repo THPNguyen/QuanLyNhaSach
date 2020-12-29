@@ -7,38 +7,38 @@ namespace ET_QLNS
 {
     public class ET_HoaDon
     {
-        String MaHD;
-        String MaNV;
-        String MaKH;
-        String LoaiHoaDon;
-        float TongTien;
-        String NgayXuatHD;
+        String _MaHD;
+        String _NgayXuatHoaDon;
+        float _TongTien;
+        String _LoaiHoaDon;
+        String _MaNV;
+        String _MaKH;
 
-        public ET_HoaDon()
-        {
-        }
-
-        public ET_HoaDon(string maHD, string maNV, string maKH, string loaiHoaDon, float tongTien, string ngayXuatHD)
-        {
-            MaHD = maHD;
-            MaNV = maNV;
-            MaKH = maKH;
-            LoaiHoaDon = loaiHoaDon;
-            TongTien = tongTien;
-            NgayXuatHD = ngayXuatHD;
-        }
-
-        public string _MaHD { get => MaHD; set => MaHD = value; }
-        public string _MaNV { get => MaNV; set => MaNV = value; }
-        public string _MaKH { get => MaKH; set => MaKH = value; }
-        public string _LoaiHoaDon { get => LoaiHoaDon; set => LoaiHoaDon = value; }
-        public float _TongTien { get => TongTien; set => TongTien = value; }
-        public string _NgayXuatHD { get => NgayXuatHD; set => NgayXuatHD = value; }
+        public string MaHD { get => _MaHD; set => _MaHD = value; }
+        public string NgayXuatHoaDon { get => _NgayXuatHoaDon; set => _NgayXuatHoaDon = value; }
+        public float TongTien { get => _TongTien; set => _TongTien = value; }
+        public string LoaiHoaDon { get => _LoaiHoaDon; set => _LoaiHoaDon = value; }
+        public string MaNV { get => _MaNV; set => _MaNV = value; }
+        public string MaKH { get => _MaKH; set => _MaKH = value; }
 
         public ArrayList getAllProperties()
         {
-            ArrayList list = new ArrayList() { _MaHD, _MaNV, _MaKH, _LoaiHoaDon, _TongTien, _NgayXuatHD};
+            ArrayList list = new ArrayList() { MaHD, NgayXuatHoaDon, TongTien, LoaiHoaDon, MaNV, MaKH };
             return list;
         }
+
+        public ET_HoaDon(string maHD, string ngayXuatHoaDon, float tongTien, string loaiHoaDon, string maNV, string maKH)
+        {
+            _MaHD = maHD;
+            _NgayXuatHoaDon = ngayXuatHoaDon;
+            _TongTien = tongTien;
+            _LoaiHoaDon = loaiHoaDon;
+            _MaNV = maNV;
+            _MaKH = maKH;
+        }
+
+        public ET_HoaDon() { }
+
+
     }
 }

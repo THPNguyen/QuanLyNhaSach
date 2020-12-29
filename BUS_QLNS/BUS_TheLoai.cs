@@ -9,22 +9,22 @@ namespace BUS_QLNS
 {
     public class BUS_TheLoai
     {
-        DAL_TheLoai dal_TheLoai = new DAL_TheLoai();
-        public DataTable getTheLoai()
+        DAL_TheLoai dal_theLoai = new DAL_TheLoai();
+        public DataTable getChiTietHD()
         {
-            return dal_TheLoai.getTL();
+            return dal_theLoai.getTheLoai();
         }
-        public bool themTL(ET_TheLoai eT_TheLoai)
+        public bool themChiTietHD(ET_TheLoai eT_TheLoai)
         {
-            return dal_TheLoai.themTL(eT_TheLoai);
+            return dal_theLoai.themTheLoai(eT_TheLoai);
         }
-        public bool suaTL(ET_TheLoai eT_TheLoai)
+        public bool suaChiTietHD(ET_TheLoai eT_TheLoai)
         {
-            return dal_TheLoai.suaTL(eT_TheLoai);
+            return dal_theLoai.suaTheLoai(eT_TheLoai);
         }
-        public bool xoaTL(string strMaTL)
+        public bool xoaChiTietHD(string strMaTL)
         {
-            return dal_TheLoai.xoaTL(strMaTL);
+            return dal_theLoai.xoaTheLoai(strMaTL);
         }
     }
 }

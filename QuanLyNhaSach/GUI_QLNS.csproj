@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>QuanLyNhaSach</RootNamespace>
     <AssemblyName>QuanLyNhaSach</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,11 +48,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlBanSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlBanSach.Designer.cs">
+      <DependentUpon>ControlBanSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlChiTietHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlChiTietHoaDon.Designer.cs">
+      <DependentUpon>ControlChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlHoaDon.Designer.cs">
+      <DependentUpon>ControlHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlNhaCungCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlNhaCungCap.Designer.cs">
+      <DependentUpon>ControlNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTheLoai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlTheLoai.Designer.cs">
+      <DependentUpon>ControlTheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietHoaDon.Designer.cs">
+      <DependentUpon>frmChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuncBanSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncBanSach.Designer.cs">
+      <DependentUpon>frmFuncBanSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuncNhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuncNhapSach.Designer.cs">
+      <DependentUpon>frmFuncNhapSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGianHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGianHang.Designer.cs">
       <DependentUpon>frmGianHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLoad.cs">
       <SubType>Form</SubType>
@@ -89,10 +144,38 @@
     <Compile Include="frmTheLoai.Designer.cs">
       <DependentUpon>frmTheLoai.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProcessGUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ControlBanSach.resx">
+      <DependentUpon>ControlBanSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlChiTietHoaDon.resx">
+      <DependentUpon>ControlChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlHoaDon.resx">
+      <DependentUpon>ControlHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlNhaCungCap.resx">
+      <DependentUpon>ControlNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTheLoai.resx">
+      <DependentUpon>ControlTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietHoaDon.resx">
+      <DependentUpon>frmChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncBanSach.resx">
+      <DependentUpon>frmFuncBanSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuncNhapSach.resx">
+      <DependentUpon>frmFuncNhapSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGianHang.resx">
       <DependentUpon>frmGianHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoad.resx">
       <DependentUpon>frmLoad.cs</DependentUpon>

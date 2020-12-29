@@ -369,5 +369,19 @@ Select * from NhaCungCap
 select * from TheLoai
 exec sp_TruyXuatSach
 --exec sp_ThemHoaDon
+exec sp_ThemHoaDon 'HD001','2020-12-20',500000,'le','KS001','GV20000001'
+exec sp_ThemHoaDon 'HD002','2020-12-21',500000,'le','KS001','GV20000001'
+exec sp_ThemHoaDon 'HD003','2020-12-22',500000,'le','KS001','GV20000001'
+exec sp_ThemHoaDon 'HD004','2020-12-23',500000,'le','KS001','GV20000001'
 
 --exec sp_ThemChiTietHoaDon
+exec sp_ThemChiTietHoaDon 'Sach000001', 'HD001','3'
+exec sp_ThemChiTietHoaDon 'Sach000002', 'HD001','3'
+exec sp_ThemChiTietHoaDon 'Sach000003', 'HD001','3'
+
+Select * from ChiTietHoaDon
+select * from HoaDon
+
+Select * from ChiTietHoaDon
+Inner join HoaDon on ChiTietHoaDon.MaHD = HoaDon.MaHD
+

@@ -14,7 +14,7 @@ namespace DAL_QLNS
             "@TenNXB"  ,
             "@SDT"  ,
             "@SoFax" ,
-            "@DiaChi" ,
+            "@DiaChi" ,   
             "@NgayNhap" ,
             "@TongSoLuong" ,
             "@GiaTien" ,
